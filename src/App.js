@@ -9,11 +9,13 @@ import {
   Link
 } from 'react-router-dom';
 
+import { Header } from './components/header-component/header-component';
+
 
 function App() {
   return (
     <div>
-
+      <Header />
       <Routes>
         <Route path='/' element={<Homepage/>} />
         <Route exact path='/shop' element={<ShopPage/>} />
